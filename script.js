@@ -82,7 +82,7 @@ $('.fm').forEach(box => {
       vp.querySelector('ul').innerHTML = c.info.map(i => `<li>${esc(i)}</li>`).join('');
       vcard.classList.remove('swap');
     };
-    if (vp.classList.contains('open')) { vcard.classList.add('swap'); vt = setTimeout(fill, 220); } /* fade out, swap, fade in */
+    if (vp.classList.contains('open')) { vcard.classList.add('swap'); vt = setTimeout(fill, 50); } /* fade out, swap, fade in */
     else { fill(); requestAnimationFrame(() => vp.classList.add('open')); }
   };
   q('v').onchange = showCar;
