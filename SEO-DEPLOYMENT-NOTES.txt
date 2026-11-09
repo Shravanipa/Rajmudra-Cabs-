@@ -1,0 +1,22 @@
+RAJMUDRA CABS - SEO UPDATE NOTES
+
+SEO updates included:
+- Page-specific title and meta description on all seven HTML pages
+- Robots and social preview metadata on each page
+- TaxiService structured data on index.html using the supplied phone/email and Kolhapur service area
+- robots.txt allowing public pages to be crawled
+
+IMPORTANT BEFORE/AFTER DEPLOYMENT:
+1. Deploy this folder as a Render Static Site. Publish directory: . (the folder containing index.html).
+2. Once Render gives you the final public URL (or you connect a custom domain), create sitemap.xml containing the final absolute URLs for:
+   /, /about.html, /services.html, /fares.html, /routes.html, /contact.html, /booking.html
+3. Add this line to robots.txt after the final URL is known:
+   Sitemap: https://YOUR-ACTUAL-DOMAIN/sitemap.xml
+   Replace the example with your real HTTPS domain. Do not leave the placeholder.
+4. Update the canonical URL and og:url tags on each page only after the final domain is known.
+5. Submit the sitemap in Google Search Console after the site is live.
+
+BUSINESS DETAIL CHECK:
+The schema uses Kolhapur, Maharashtra as the service area and does not invent a street address. Confirm the business name, phone, email and service area with the customer before publishing.
+
+SEO DOES NOT GUARANTEE RANKING. Google decides indexing and ranking.
